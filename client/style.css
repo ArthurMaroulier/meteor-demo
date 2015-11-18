@@ -1,0 +1,146 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background: #000;
+}
+h1 {
+  font-size: 22px;
+  font-weight: 300;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+.slice.lapoursuitededemain {
+  fill: #D8C9A9;
+}
+.slice.avengerslredultron {
+  fill: #1D2537;
+}
+.slice.jurassicworld {
+  fill: #111115;
+}
+.slice.kingsmanservicessecrets {
+  fill: #2B1D18;
+}
+.slice.madmaxfuryroad {
+  fill: #ECC54F;
+}
+.slice.missionimpossibleroguenation {
+  fill: #9A4323;
+}
+.slice.pixels {
+  fill: #4588B2;
+}
+.slice.seulsurmars {
+  fill: #BC6C58;
+}
+.slice.spectre {
+  fill: #DAD8D9;
+}
+.slice.terminatorgenisys {
+  fill: #545353;
+}
+
+.btn, .btn:visited {
+  display: block;
+  border-radius: 3px;
+  margin: 12px 1%;
+  color: #fff;
+  text-decoration: none;
+  background-color: #666;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.btn.lapoursuitededemain {
+  background-color: #D8C9A9;
+}
+.btn.avengerslredultron {
+  background-color: #1D2537;
+}
+.btn.jurassicworld {
+  background-color: #111115;
+}
+.btn.kingsmanservicessecrets {
+  background-color: #2B1D18;
+}
+.btn.madmaxfuryroad {
+  background-color: #ECC54F;
+}
+.btn.missionimpossibleroguenation {
+  background-color: #9A4323;
+}
+.btn.pixels {
+  background-color: #4588B2;
+}
+.btn.seulsurmars {
+  background-color: #BC6C58;
+}
+.btn.spectre {
+  background-color: #DAD8D9;
+}
+.btn.terminatorgenisys {
+  background-color: #545353;
+}
+
+.flexContainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .btn, .btn:visited {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .btn, .btn:visited {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .btn, .btn:visited {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+  .btn, .btn:visited {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
