@@ -18,5 +18,5 @@
 </template>
 
 <template name="button">
-  <a href="#" class="{{getButtonClass this.title}}">{{this.title}}</a>
+  <a href="#" class="{{getButtonClass this.title}}">{{this.title}}{{{movieVotesCount(this.title)}}}</a>
 </template>
