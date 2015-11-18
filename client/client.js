@@ -12,6 +12,39 @@ Meteor.startup(function () {
 Template.buttons.helpers({
   movies: function () {
     return Movies.find().fetch();
+  },
+
+  getOrder: function (movie) {
+    var votes = Votes.find().fetch(),
+        movies = Movies.find().fetch(),
+        numberOfMovies = movies.length,
+        trueRes = {};
+
+    if (votes.length) {
+      var grouped = _.groupBy(_.pluck(votes, 'movie')),
+          res = [];
+
+      _.each(_.values(grouped), function(movie) {
+        res.push({title: movie[0], votes: movie.length});
+      });
+
+      res = _.sortBy(res, "votes").reverse();
+
+      _.each(res, function(elem, index) {
+        trueRes[elem.title] = (index + 1);
+      });
+
+    } else {
+      _.each(movies, function(elem, index) {
+        trueRes[elem.title] = (index + 1);
+      });
+    }
+
+    if (trueRes[movie] === undefined) {
+      return numberOfMovies;
+    } else {
+      return trueRes[movie];
+    }
   }
 });
 

@@ -15,9 +15,9 @@
 </template>
 
 <template name="buttons">
-  <ul>
+  <ul class="flexContainer">
     {{#each movies}}
-      <li>{{> button}}</li>
+      <li style="order: {{getOrder this.title}}">{{> button}}</li>
     {{/each}}
   </ul>
 </template>
