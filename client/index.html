@@ -6,4 +6,17 @@
 
 <body>
   <h1>Top films 2015</h1>
+  {{> buttons}}
 </body>
+
+<template name="buttons">
+  <ul>
+    {{#each movies}}
+      <li>{{> button}}</li>
+    {{/each}}
+  </ul>
+</template>
+
+<template name="button">
+  <a href="#" class="{{getButtonClass this.title}}">{{this.title}}</a>
+</template>
